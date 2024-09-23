@@ -1,22 +1,29 @@
 {
-  "name": "form-playground",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.13"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18"
-  }
+	"name": "form-playground",
+	"type": "module",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 3003",
+		"build": "next build",
+		"start": "next start -p 3003",
+    "hcm": "hcm 'src/**/*.module.{css,scss,less}'"
+	},
+	"dependencies": {
+		"@radix-ui/themes": "^3.1.3",
+		"next": "15.0.0-rc.0",
+		"react": "19.0.0-rc-e4953922-20240919",
+		"react-dom": "19.0.0-rc-e4953922-20240919"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.2",
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"happy-css-modules": "^3.1.1",
+		"stylelint": "^16.9.0",
+		"stylelint-config-recess-order": "^5.1.1",
+		"stylelint-config-standard": "^36.0.1",
+		"typescript": "^5"
+	}
 }
